@@ -6,40 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/estilo.css">
     <script src="js/vertificacion.js"></script>
-
+    <script src="js/codigo.js"></script>
+    <!--
     <script>
-        alert("Bienvenid@ a la fiesta BY Julian Rondina");
+        alert("Bienvenid@ a la fiesta BY Julian Rondina\n"+"PONTE LOS AURICULARES");
     </script>
-
+ -->
 
     <title>PatyTest</title>
 </head>
 
 
 <body>
-    
+
     <header>
-        
         <input type="checkbox" id="menu">
         <label for="menu"><img src="img/menu.png" alt=""></label>
         <h3>Menu de musica</h3>
-        
+
         <div id="Stream">
             <iframe src="//www.zeno.fm/player/partytimetest" width="150" height="140" frameborder="0"
                 scrolling="no"></iframe><a href="https://www.zeno.fm" target="_blank"
                 style="display: block; font-size: 0.9em; line-height: 10px;">A Zeno Media Station</a>
         </div>
+
+
     </header>
 
+    <div id="contenedor">
 
 
-    <section id="Video">
+        <div class="tres">
 
-        <iframe
-            src="https://tokbox.com/embed/embed/ot-embed.js?embedId=60e9e27b-5731-40fd-9ee4-cdb9dffbd922&room=DEFAULT_ROOM&iframe=true"
-            width="100%" height="auto" scrolling="no" allow="microphone; camera"></iframe>
 
-    </section>
+            <iframe id="iframe" allow="microphone; camera"
+                style="border: 0; height: 100%; left: 0; position: absolute; top: 0px; width: 100%;"
+                src="https://videolink2me.com/" frameborder="0"></iframe>
+
+        </div>
+
+        <div class="dos"></div>
+
+        <div id="uno">
+            <form id="link">
+                <input type="text" placeholder="Ingresa tu sala" id="id">
+                <input type="button" value="INGRESAR" onclick="newSite()">
+            </form>
+        </div>
+
+    </div>
+
 
 
 
